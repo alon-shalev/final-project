@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+header{
+    width: 100%;
+    background-color: #F1EBDE;
+    height: auto;
+    
+}
+
+    
+.AnnouncementBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    font-size: 10px;
+    padding-top: 10px; ;
+    
+
+}
+
+ .nav-container{
+   display: flex;
+   margin-right: 15px;
+   margin-left: 15px;
+    justify-content: space-between;
+    align-items:center;
+    position: relative;
+    height: 50px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-container .logo{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    left: calc(50% - 45px);
+    font-family: "Suranna";
+
+    
+}
+.nav-container .under-line{
+    position: absolute;
+}
+.nav-container .account_details{
+    margin: 5px;
+}
+.account_details a{
+    padding: 5px;
+}
+.nav_categories{
+    margin: 5px;
+}
+.nav_categories a{
+    padding: 5px 15px 5px 15px;
+}
+.under-line{
+    border: 1px solid #F1EBDE;
+    height: 5px;
+    width: 250px;
+    top: 75%;
+    left: 1.75%;
+    background: linear-gradient(90deg,#ff5c77, #4dd091, #ffec59, #ffa23a);
+}
+@media  screen and (max-width: 767px){
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-between;
+    }
+    .nav-container .logo{
+        top:10%;
+        font-size: 40px;
+        left: calc(50% - 55px);
+        
+    }
+    .account_details a{
+        margin: 10px;
+       margin-bottom: 20px;
+
+    }
+    .under-line{
+        left: calc(50% - 75px); 
+        width: 150px;  
+        top: 70%;
+    }
+}
+
