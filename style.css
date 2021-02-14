@@ -9,6 +9,7 @@ body {
 
 
 
+
 }
 
 img {
@@ -16,10 +17,14 @@ img {
     height: auto;
 }
 
+
 header {
     width: 100%;
     background-color: #F1EBDE;
     height: auto;
+    position: fixed;
+    z-index: 1000;
+
 
 }
 
@@ -47,9 +52,42 @@ header {
 
 }
 
+.nav-container .logo:hover {
+    transition: 0.8s;
+    font-size: 2.3rem;
+}
+
+.AnnouncementBar:hover {
+    transition: 0.8s;
+    font-size: 0.9rem;
+}
+
 a {
     text-decoration: none;
     color: black;
+}
+
+.nav-container a:hover {
+    color: #009845;
+    transition: 0.8s;
+    font-size: 1.2rem;
+}
+
+.top-button .main-button:hover {
+    transition: 0.8s;
+    font-size: 2.3rem;
+}
+
+.images a:hover {
+    transition: 0.8s;
+    color: #009845;
+    font-size: 1.2rem;
+}
+
+.images button:hover {
+    transition: 0.8s;
+    color: #009845;
+    font-size: 1.6rem;
 }
 
 .nav-container .logo {
@@ -62,6 +100,7 @@ a {
 
 
 }
+
 
 .nav-container .under-line {
     position: absolute;
@@ -89,7 +128,9 @@ a {
     width: 250px;
     top: 75%;
     left: 1.75%;
-    background: linear-gradient(90deg, #ff5c77, #4dd091, #ffec59, #ffa23a);
+    background: linear-gradient(90deg, #009845 9.37%, #0a78db 26.04%, #7927c8 42.71%, #e62000 58.33%, #ff7b02 75%, #fdcb05 91.15%);
+
+    /*background: linear-gradient(90deg, #ff5c77, #4dd091, #ffec59, #ffa23a);*/
 }
 
 @media screen and (max-width: 767px) {
@@ -125,6 +166,14 @@ a {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 80px;
+
+}
+
+@media screen and (max-width: 767px) {
+    .first-window {
+        padding-top: 120px;
+    }
 }
 
 .first-h3 {
@@ -135,6 +184,7 @@ a {
 
 
 }
+
 
 .images {
     display: flex;
@@ -188,8 +238,10 @@ button {
 }
 
 @media screen and (max-width: 767px) {
+
     .images {
         flex-direction: column;
+
     }
 
     .first-images-j {
@@ -205,15 +257,15 @@ button {
 
 .hetz-right {
     position: absolute;
-    top: 354px;
+    top: 90%;
     left: 140px;
 
 }
 
 .hetz-left {
     position: absolute;
-    top: 352px;
-    left: 250px;
+    top: 90%;
+    left: 255px;
 }
 
 .top-button .hetz-top-right {
@@ -254,6 +306,7 @@ button {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2%;
 
 }
 
@@ -266,6 +319,13 @@ button {
     position: relative;
 
 }
+
+.best-seller h5 {
+    color: #009845;
+
+}
+
+
 
 .best-seller-conteiner h3 {
     font-size: 30px;
@@ -287,6 +347,68 @@ button {
 
 }
 
+.dots :hover {
+    width: 20px;
+    height: 20px;
+    transition: 0.8s;
+}
+
+@media screen and (max-width:1199px) {
+
+    .best-sellers-pictures {
+        width: 650px;
+
+    }
+
+    .best-seller {
+        width: 100%;
+    }
+
+    .under-line-best-seller {
+        width: 200px;
+    }
+
+    .hetz-right-scroll-best-seller {
+        display: none;
+
+
+    }
+
+    .hetz-left-scroll-best-seller {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width:767px) {
+    .best-sellers-pictures {
+        width: 100%;
+    }
+
+    .best-seller {
+        width: 100%;
+    }
+
+    .best-seller-conteiner h3 {
+        font-size: 25px;
+    }
+
+    h3 .under-line-best-seller {
+        width: 200px;
+    }
+
+    .hetz-right-scroll-best-seller {
+        display: none;
+
+
+    }
+
+    .hetz-left-scroll-best-seller {
+        display: none;
+
+    }
+}
+
 .photo-box {
     display: flex;
     flex-direction: column;
@@ -299,26 +421,35 @@ button {
     width: 300px;
 }
 
+.photo-box h5 {
+    padding-left: 10px;
+}
+
+.photo-box p {
+    padding-left: 10px;
+}
+
 .dots {
     display: flex;
     flex-direction: row;
+    padding-left: 10px;
 }
 
 .red-dot {
     height: 15px;
     width: 15px;
-    border: 1px solid red;
+    border: 1px solid #FCB1A6;
     border-radius: 50%;
-    background-color: red;
+    background-color: #FCB1A6;
     margin-right: 12px;
 }
 
 .blue-dot {
     height: 15px;
     width: 15px;
-    border: 1px solid blue;
+    border: 1px solid #B7918C;
     border-radius: 50%;
-    background-color: blue;
+    background-color: #B7918C;
     margin-right: 12px;
 }
 
@@ -334,18 +465,18 @@ button {
 .green-dot {
     height: 15px;
     width: 15px;
-    border: 1px solid green;
+    border: 1px solid #92C9B1;
     border-radius: 50%;
-    background-color: green;
+    background-color: #92C9B1;
     margin-right: 12px;
 }
 
 .purple-dot {
     height: 15px;
     width: 15px;
-    border: 1px solid purple;
+    border: 1px solid #571F4E;
     border-radius: 50%;
-    background-color: purple;
+    background-color: #571F4E;
     margin-right: 12px;
 }
 
@@ -366,90 +497,104 @@ button {
     width: 245px;
     top: 120%;
     left: 0%;
-    background: linear-gradient(90deg, #ff5c77, #4dd091, #ffec59, #ffa23a);
+    background: linear-gradient(90deg, #009845 9.37%, #0a78db 26.04%, #7927c8 42.71%, #e62000 58.33%, #ff7b02 75%, #fdcb05 91.15%);
+
+    /*background: linear-gradient(90deg, #ff5c77, #4dd091, #ffec59, #ffa23a);*/
 }
 
 .hetz-right-scroll-best-seller {
     position: absolute;
     top: 50%;
-    left: 115%;
+    left: 105%;
     font-size: 30px;
 }
 
 .hetz-left-scroll-best-seller {
     position: absolute;
     top: 50%;
-    left: -15%;
+    left: -5%;
     font-size: 30px;
 }
 
-/* 
-header{
-   
-    background:#F1EBDE;
-    
-    width: 100%;
-   
- 
-} */
 
-/*
-.AnnouncementBar{
-    display:flex;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    padding: 12px 15px;
+
+button {
+    border: none;
+    line-height: 20px;
+    font-size: 1.5rem;
+    background-color: white;
+    padding-top: 0;
+
+    padding-bottom: 0;
+
 }
 
+button:hover {
+    color: #009845;
 
-.AnnouncementBar p{
-    font-size: 16px;
+    transition: 0.8s;
 }
-
-.nav_container{
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    margin-left: 15px;
-    margin-right: 15px; 
-    height: 40px;
-    align-items: center;
-  
-}
-
-.nav_container .logo{
-    position:absolute;
-    left: calc(50% - 70px);
-    font-size: 50px;
-    
-}
-
-
-.nav_container .under-line{
-    position:absolute;
-}
-
-*/
 
 /*about section */
-.about-part p{
-    font-weight: 200;
-}
-.about-section {
 
+
+
+/* .quote :hover { */
+/* border: solid 2px;
+    box-shadow: 15px 15px 0 0 #009845; */
+.quote:hover {
+    border: 2px solid black;
+    box-shadow: 15px 15px 0 0 #009845;
+
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 1em;
+
+    transition: 1s;
+}
+
+.about-part {
+    margin-top: 5%;
+}
+
+.about-part p {
+    font-weight: 100;
+    line-height: 1.5;
+    text-align: center;
+
+
+}
+
+
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
     max-width: 745px;
     margin: auto;
 }
 
 .about-container {
-    max-width: 745px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-column img {
     max-width: 450px;
 }
 
+/*
 .about-container {
 
     width: 1100px;
@@ -460,12 +605,11 @@ header{
 }
 
 .about-section {
-    display: flex;
-    flex-wrap: wrap;
+   
     margin-right: -15px;
     margin-left: -15px;
 }
-
+*/
 .about-column {
     flex: 0 0 50%;
     max-width: 50%;
@@ -479,13 +623,14 @@ header{
         width: 100%;
     }
 
+    /* 
     .best-seller-conteiner {}
 
     .best-sellers-pictures {
         display: flex;
     }
 
-    .best-sellers-pictures {}
+    .best-sellers-pictures {} */
 
     .about-section {
         display: block;
@@ -518,18 +663,31 @@ a {
     display: flex;
     justify-content: center;
     width: 100%;
+
     padding-right: 40px;
     padding-left: 40px;
     padding-bottom: 40px;
 
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 60px;
     align-items: center;
-    width: 70.33%;
     position: relative;
-    overflow: visible;
 
 
+
+}
+
+@media screen and (max-width: 767px) {
+
+
+    .insta-container {
+        overflow: auto;
+        padding-bottom: 0;
+        max-width: 100%;
+        height: 250px;
+
+    }
 }
 
 .instagram-slider h1 {
@@ -537,10 +695,13 @@ a {
 }
 
 .instagram-slider {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 120px;
+    margin-bottom: 15%;
+    max-width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
+
 
 
 }
@@ -549,6 +710,73 @@ a {
     display: flex;
 
 
+
+
+}
+
+
+.column i {
+    top: 150%;
+    color: #ffffff;
+
+    padding: 5px;
+    background: #009845;
+    position: absolute;
+
+
+}
+
+.column i:hover {
+
+
+
+
+    animation: rotate;
+    animation-duration: 1s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    12.5% {
+        transform: rotate(45deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    37.5% {
+        transform: rotate(135deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    62.5% {
+        transform: rotate(225deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    87.5% {
+        transform: rotate(315deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.author-row {
+    margin-top: 5px;
+    font-size: 0.7em;
 }
 
 .column {
@@ -559,15 +787,35 @@ a {
 
 }
 
+
+
 .footer {
 
 
-    bottom: 0%;
-    border-top: 1px solid #d6d6d6;
+
+    /*  border-top: 1px solid #d6d6d6;*/
     width: 100%;
     flex-wrap: wrap;
+    background-color: #F1EDDE;
+    height: 100%;
+    position: relative;
+    z-index: 1000;
 
 
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .footer-container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.made a:hover {
+    color: #e62000;
 
 }
 
@@ -577,9 +825,9 @@ a {
     justify-content: space-between;
     height: 100%;
     width: 100%;
-    margin-right: 40px;
-    margin-left: 40px;
-    padding-right: 40px;
+    margin-right: auto;
+    margin-left: auto;
+
     padding-left: 40px;
     flex-wrap: wrap;
 }
@@ -588,7 +836,7 @@ a {
 .footer-container .footer-items {
 
     align-items: center;
-    max-width: 16.6%;
+
 }
 
 .BottomFooter {
@@ -604,6 +852,7 @@ a {
 
     padding-top: 14px;
     padding-bottom: 14px;
+
     margin-right: 40px;
 
 
@@ -630,16 +879,13 @@ a {
 .newsletter {
     padding-bottom: 32px;
 
-
 }
-
-
 
 button {
     border: none;
     line-height: 20px;
     font-size: 1.5rem;
-    background-color: white;
+    background-color: #F1EDDE;
     padding-top: 0;
 
     padding-bottom: 0;
@@ -650,19 +896,7 @@ button:hover {
     color: #009845;
 }
 
-/*
-.newsletter i{
-    border-top-right-radius:0;
-    border-bottom-right-radius:0;
-    line-height:20px;
-    font-size:1rem;
-    background-color: white;
-    padding-top:0;
 
-    padding-bottom: 0;
-   
-}
-*/
 
 .social-icons i {
     /* text-decoration: none;
@@ -680,6 +914,8 @@ input {
     border-left: 0;
     border-bottom: 1px solid green;
     color: grey;
+    background-color: #F1EDDE;
+
 
 
 }
@@ -708,29 +944,54 @@ a:hover {
 @media screen and (min-width: 1024px) {
     .footer-container {
         padding-top: 40px;
+        padding-right: 40px;
+
     }
 
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width:1024px) {
+
+    .about-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
     .footer-container {
         padding-bottom: 1%;
+        padding-right: 40px;
+
     }
 
 }
 
 @media screen and (max-width: 500px) {
-    .column {
+
+
+    .insta-container {
         width: 100%;
     }
 }
 
-@media (max-width: 767px) {
-    .about-container {
-        width: 100%;
+
+@media screen and (max-width: 767px) {
+
+    .column img {
+        width: 75px;
+        height: auto;
 
     }
 
 
 }
+
+
+
+
+
+
+
+
+/*  this is a comment fot us to see if git is working */
